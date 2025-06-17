@@ -1,0 +1,6 @@
+[submodule "cookbooks/anthropic"]
+	path = cookbooks/anthropic
+	url = https://github.com/anthropics/anthropic-cookbook.git
+[submodule "cookbooks/openai"]
+	path = cookbooks/openai
+	url = https://github.com/openai/openai-cookbook.git
