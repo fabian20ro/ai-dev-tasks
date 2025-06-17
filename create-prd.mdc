@@ -4,6 +4,7 @@ globs:
 alwaysApply: false
 ---
 # Rule: Generating a Product Requirements Document (PRD)
+# Optimized for GPT‑4.1 with the GitHub Copilot agent plugin
 
 ## Goal
 
@@ -14,7 +15,7 @@ To guide an AI assistant in creating a detailed Product Requirements Document (P
 1.  **Receive Initial Prompt:** The user provides a brief description or request for a new feature or functionality.
 2.  **Ask Clarifying Questions:** Before writing the PRD, the AI *must* ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which the developer will figure out).
 3.  **Generate PRD:** Based on the initial prompt and the user's answers to the clarifying questions, generate a PRD using the structure outlined below.
-4.  **Save PRD:** Save the generated document as `prd-[feature-name].md` inside the `/tasks` directory.
+4.  **Save PRD:** Use the GitHub Copilot agent to write the file `prd-[feature-name].md` inside the `/tasks` directory.
 
 ## Clarifying Questions (Examples)
 
@@ -59,3 +60,4 @@ Assume the primary reader of the PRD is a **junior developer**. Therefore, requi
 1. Do NOT start implementing the PRD
 2. Make sure to ask the user clarifying questions
 3. Take the user's answers to the clarifying questions and improve the PRD
+4. Use the Copilot agent to save the final document in `/tasks/prd-[feature-name].md`

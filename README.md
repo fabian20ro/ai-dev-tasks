@@ -1,6 +1,6 @@
-# 🚀 AI Dev Tasks for Cursor 🤖
+# 🚀 AI Dev Tasks for GitHub Copilot 🤖
 
-Welcome to **AI Dev Tasks**! This repository provides a collection of `.mdc` (Markdown Command) files designed to supercharge your feature development workflow within the [Cursor](https://cursor.sh/) editor. By leveraging these commands with Cursor's AI Agent, you can systematically approach building features, from ideation to implementation, with built-in checkpoints for verification.
+Welcome to **AI Dev Tasks**! This repository provides a collection of `.mdc` (Markdown Command) files designed to supercharge your feature development workflow with the **GitHub Copilot agent** running on **GPT‑4.1**. By leveraging these commands with Copilot, you can systematically approach building features, from ideation to implementation, with built‑in checkpoints for verification.
 
 Stop wrestling with monolithic AI requests and start guiding your AI collaborator step-by-step!
 
@@ -22,17 +22,17 @@ Here's the step-by-step process using the `.mdc` files in this repository:
 
 First, lay out the blueprint for your feature. A PRD clarifies what you're building, for whom, and why.
 
-You can create a lightweight PRD directly within Cursor:
+You can create a lightweight PRD directly in your editor using GitHub Copilot Chat:
 
 1.  Ensure you have the `create-prd.mdc` file from this repository accessible.
-2.  In Cursor's Agent chat, initiate PRD creation:
+2.  In Copilot chat, initiate PRD creation:
 
     ```
     Use @create-prd.mdc
     Here's the feature I want to build: [Describe your feature in detail]
     Reference these files to help you: [Optional: @file1.py @file2.ts]
     ```
-    *(Pro Tip: For complex PRDs, using MAX mode in Cursor is highly recommended if your budget allows for more comprehensive generation.)*
+    *(Pro Tip: For complex PRDs, using GPT‑4.1 in "Max" mode can yield more comprehensive results if your token budget allows.)*
 
     ![Example of initiating PRD creation](https://pbs.twimg.com/media/Go6DDlyX0AAS7JE?format=jpg&name=large)
 
@@ -41,7 +41,7 @@ You can create a lightweight PRD directly within Cursor:
 With your PRD drafted (e.g., `MyFeature-PRD.md`), the next step is to generate a detailed, step-by-step implementation plan for your AI Developer.
 
 1.  Ensure you have `generate-tasks.mdc` accessible.
-2.  In Cursor's Agent chat, use the PRD to create tasks:
+2.  In Copilot chat, use the PRD to create tasks:
 
     ```
     Now take @MyFeature-PRD.md and create tasks using @generate-tasks.mdc
@@ -61,7 +61,7 @@ You'll now have a well-structured task list, often with tasks and sub-tasks, rea
 To ensure methodical progress and allow for verification, we'll use `process-task-list.mdc`. This command instructs the AI to focus on one task at a time and wait for your go-ahead before moving to the next.
 
 1.  Create or ensure you have the `process-task-list.mdc` file accessible.
-2.  In Cursor's Agent chat, tell the AI to start with the first task (e.g., `1.1`):
+2.  In Copilot chat, tell the AI to start with the first task (e.g., `1.1`):
 
     ```
     Please start on task 1.1 and use @process-task-list.mdc
@@ -93,7 +93,7 @@ If you'd like to see this in action, I demonstrated it on [Claire Vo's "How I AI
 ## 🗂️ Files in this Repository
 
 *   **`create-prd.mdc`**: Guides the AI in generating a Product Requirement Document for your feature.
-*   **`generate-tasks-from-prd.mdc`**: Takes a PRD markdown file as input and helps the AI break it down into a detailed, step-by-step implementation task list.
+*   **`generate-tasks.mdc`**: Takes a PRD markdown file as input and helps the AI break it down into a detailed, step-by-step implementation task list.
 *   **`process-task-list.mdc`**: Instructs the AI on how to process the generated task list, tackling one task at a time and waiting for your approval before proceeding. (This file also contains logic for the AI to mark tasks as complete).
 
 ## 🌟 Benefits
@@ -106,8 +106,8 @@ If you'd like to see this in action, I demonstrated it on [Claire Vo's "How I AI
 
 ## 🛠️ How to Use
 
-1.  **Clone or Download:** Get these `.mdc` files into your project or a central location where Cursor can access them.
-2.  **Follow the Workflow:** Systematically use the `.mdc` files in Cursor's Agent chat as described in the 5-step workflow above.
+1.  **Clone or Download:** Get these `.mdc` files into your project so the GitHub Copilot agent can access them.
+2.  **Follow the Workflow:** Systematically use the `.mdc` files in Copilot chat as described in the 5-step workflow above.
 3.  **Adapt and Iterate:**
     *   Feel free to modify the prompts within the `.mdc` files to better suit your specific needs or coding style.
     *   If the AI struggles with a task, try rephrasing your initial feature description or breaking down tasks even further.
@@ -115,9 +115,19 @@ If you'd like to see this in action, I demonstrated it on [Claire Vo's "How I AI
 ## 💡 Tips for Success
 
 *   **Be Specific:** The more context and clear instructions you provide (both in your initial feature description and any clarifications), the better the AI's output will be.
-*   **MAX Mode for PRDs:** As mentioned, using MAX mode in Cursor for PRD creation (`create-prd.mdc`) can yield more thorough and higher-quality results if your budget supports it.
+*   **Max Mode for PRDs:** Using GPT‑4.1 in its "Max" mode when running `create-prd.mdc` can yield more thorough results if your token budget allows.
 *   **Correct File Tagging:** Always ensure you're accurately tagging the PRD filename (e.g., `@MyFeature-PRD.md`) when generating tasks.
 *   **Patience and Iteration:** AI is a powerful tool, but it's not magic. Be prepared to guide, correct, and iterate. This workflow is designed to make that iteration process smoother.
+
+## 📚 Cookbooks
+
+This repository links to both the Anthropic and OpenAI cookbooks as submodules. If you want to explore additional prompt patterns and best practices, run:
+
+```bash
+git submodule update --init --recursive
+```
+
+The cookbooks will then appear under `cookbooks/anthropic` and `cookbooks/openai`.
 
 ## 🤝 Contributing
 
@@ -128,4 +138,4 @@ Please feel free to:
 
 ---
 
-Happy AI-assisted developing!
+Happy Copilot-powered developing!
