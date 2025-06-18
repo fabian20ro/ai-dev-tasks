@@ -116,6 +116,7 @@ If you'd like to see this in action, I demonstrated it on [Claire Vo's "How I AI
 
 *   **Be Specific:** The more context and clear instructions you provide (both in your initial feature description and any clarifications), the better the AI's output will be.
 *   **Max Mode for PRDs:** Using GPT‑4.1 in its "Max" mode when running `create-prd.mdc` can yield more thorough results if your token budget allows.
+*   **Confirm Understanding:** Ask clarifying questions in a short bullet list and summarize the answers before generating a PRD.
 *   **Correct File Tagging:** Always ensure you're accurately tagging the PRD filename (e.g., `@MyFeature-PRD.md`) when generating tasks.
 *   **Patience and Iteration:** AI is a powerful tool, but it's not magic. Be prepared to guide, correct, and iterate. This workflow is designed to make that iteration process smoother.
 
@@ -128,6 +129,7 @@ git submodule update --init --recursive
 ```
 
 The cookbooks will then appear under `cookbooks/anthropic` and `cookbooks/openai`.
+These prompts already incorporate several tips from the OpenAI cookbook, such as using bullet lists, summaries for confirmation, and explicit numbering.
 
 ## 🤝 Contributing
 
