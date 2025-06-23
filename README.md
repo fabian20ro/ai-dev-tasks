@@ -1,3 +1,7 @@
+This is a fork from snarktank's repo.
+I tried to add an implementation after the current drawbacks from the following article:
+![Coggnition AI principles of context engineering](https://cognition.ai/blog/dont-build-multi-agents#principles-of-context-engineering)
+
 # 🚀 AI Dev Tasks for GitHub Copilot 🤖
 
 Welcome to **AI Dev Tasks**! This repository provides a collection of `.mdc` (Markdown Command) files designed to supercharge your feature development workflow with the **GitHub Copilot agent** running on **GPT‑4.1**. By leveraging these commands with Copilot, you can systematically approach building features, from ideation to implementation, with built-in checkpoints for verification.
