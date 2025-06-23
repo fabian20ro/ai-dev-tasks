@@ -1,0 +1,20 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Retro Review
+# Optimized for GPT‑4.1 with the GitHub Copilot agent plugin
+
+A reflection checkpoint used after each major parent task.
+
+## Goal
+
+Validate that accumulated decisions still make sense and flag inconsistencies.
+
+## Process
+
+1. Read `decision-log.md` and the latest `context-snapshot.md`.
+2. Summarise progress and highlight any conflicting choices.
+3. Use GPT‑4.1 "plan & reflect" language to suggest adjustments if needed.
+4. Save the review notes to `retro-review-YYYYMMDD.md`.

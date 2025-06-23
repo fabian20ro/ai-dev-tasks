@@ -1,0 +1,29 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Decision Log
+# Optimized for GPT‑4.1 with the GitHub Copilot agent plugin
+
+A single markdown file capturing irreversible choices during development.
+
+## Goal
+
+Provide persistent memory of architectural decisions, APIs chosen, data-model assumptions and naming conventions.
+
+## When to Write
+
+- After drafting the PRD.
+- After generating tasks.
+- After completing any sub-task that introduces a hard-to-reverse choice.
+
+## Format
+
+Append entries to a markdown table. **Never edit previous rows.**
+
+| Timestamp UTC | Context | Decision | Rationale | Source |
+| --- | --- | --- | --- | --- |
+| 2024-01-01T00:00Z | example | short description | why made | path/to/source |
+
+Replace the example with real data for each entry.

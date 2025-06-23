@@ -1,0 +1,22 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Context Summariser
+# Optimized for GPT‑4.1 with the GitHub Copilot agent plugin
+
+Role: compress the working history of this project into a snapshot ≤4k tokens.
+
+## Goal
+
+Maintain a running summary of chat history, code diffs, PRD, tasks and decision log so sub-agents share consistent context.
+
+## Instructions
+
+1. Read the entire trace including `decision-log.md` and recent task files.
+2. Produce a concise bullet list highlighting key decisions, progress and open questions.
+3. Limit the output to 4k tokens or fewer.
+4. Save the result in `context-snapshot.md` replacing the previous snapshot.
+
+Use this snapshot for all subsequent prompts.
